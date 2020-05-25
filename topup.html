@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="http://00houqq.cn/favicon.ico" />
+    <title>充值 - 一个奇鸽船新体验</title>
+    <style>
+        #ctn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ctn">
+        <h1 style="display: inline;">请务必备注上你的用户名:<span style="color: red" id="username"></span></h1>
+        <span>充值将在一个工作日内完成</span>
+        <span>售后QQ群:691017244</span>
+        <a href="https://qr.alipay.com/tsx02907mtbanqhpid1vq87"><img src="res/image/alipay.jpg" alt="alipay"></a>
+<br>
+        <a href="wxp://f2f0p_qNyNEd6TdLm6DBIb9PWiHFsP7ZkmN8"><img src="res/image/wechat.jpg" alt="wechat"></a>
+    </div>
+    <script>
+        var username = location.href.split('u=')
+        if (username.length > 1) {
+            document.getElementById("username").innerHTML = decodeURIComponent(username[1])
+        }
+    </script>
+</body>
+
+</html>
