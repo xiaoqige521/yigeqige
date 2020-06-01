@@ -10,6 +10,27 @@
     <link rel="icon" href="http://00houqq.cn/favicon.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script type="text/javascript">
+    $(function () {
+      function getNowFormatDate() {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        var currentdate = month + "月" + strDate + "日";
+        return currentdate;
+      }
+      var text = [
+        "软件已进行内部整改，1.71新版本重新注册账户。请注册后联系当时开通会员联系的Qq",
+        "当然免费的，人数挺多的。就小奇鸽一人在位，请耐心等待",
+      ], content = "";
+      for (var i = 0; i < text.length; i++) {
+        content += (i + 1) + ". " + text[i] + "\n";
+      }
+      setTimeout(function () {
+        swal(getNowFormatDate() + "通知", content, "success");
+      }, 1000)
+    })
+  </script>
     <style>
         .price {
             color: red
@@ -93,26 +114,5 @@
 </body>
 
    <script src="https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      function getNowFormatDate() {
-        var date = new Date();
-        var month = date.getMonth() + 1;
-        var strDate = date.getDate();
-        var currentdate = month + "月" + strDate + "日";
-        return currentdate;
-      }
-      var text = [
-        "软件已进行内部整改，1.71新版本重新注册账户。请注册后联系当时开通会员联系的Qq",
-        "当然免费的，人数挺多的。就小奇鸽一人在位，请耐心等待",
-      ], content = "";
-      for (var i = 0; i < text.length; i++) {
-        content += (i + 1) + ". " + text[i] + "\n";
-      }
-      setTimeout(function () {
-        swal(getNowFormatDate() + "通知", content, "success");
-      }, 1000)
-    })
-  </script>
-    
+
 </html>
