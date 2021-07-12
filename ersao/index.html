@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="gbk"/>
+	<script>
+      alert("\n打开网站需要缓存一下，进入后点一下暂停和播放就可以起飞了\n");
+    </script>
+	<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+	<title>一个奇鸽掏耳朵_耳机福利</title>
+	<style>
+		li{
+			list-style-type:none;
+			margin:5px;
+		}
+		a{
+			text-decoration:none;
+			color:blue;
+		}
+		#musicTitle{
+			font-size:30px;
+		}
+	</style>
+	<script src="jquery-1-7-2.js"></script>
+	<script>
+		var myMusics = new Array(
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/shaonv.mp3",title:"少女娇喘"},
+			{src:"http://ma19lx.coding-pages.com/mp3/t1.mp3",title:"?666 迷人的继母"},
+			{src:"http://ma19lx.coding-pages.com/mp3/t2.mp3",title:"【元旦福利】哥哥专属"},
+			{src:"http://ma19lx.coding-pages.com/mp3/t3.mp3",title:"德国骨科~姐姐求放过（林晓蜜）"},
+			{src:"http://ma19lx.coding-pages.com/mp3/t4.mp3",title:"护士"},
+			{src:"http://ma19lx.coding-pages.com/mp3/t5.mp3",title:"女友的ntr日记（上） 林晓蜜"},
+			{src:"http://ma19lx.coding-pages.com/mp3/t6.mp3",title:"女友的ntr日记（下） "},
+			{src:"http://ma19lx.coding-pages.com/mp3/t7.mp3",title:"温柔的大嫂"}, 
+                        {src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car001.mp3",title:"福利高能-1"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car002.mp3",title:"福利高能-2"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car003.mp3",title:"福利高能-3"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car004.mp3",title:"福利高能-4"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car005.mp3",title:"福利高能-5"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car006.mp3",title:"福利高能-6"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car007.mp3",title:"福利高能-7"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car008.mp3",title:"福利高能-8"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car009.mp3",title:"福利高能-9"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car010.mp3",title:"福利高能-10"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car011.mp3",title:"福利高能-11"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car012.mp3",title:"福利高能-12"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car013.mp3",title:"福利高能-13"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car014.mp3",title:"福利高能-14"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car015.mp3",title:"福利高能-15"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car016.mp3",title:"福利高能-16"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car017.mp3",title:"福利高能-17"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car018.mp3",title:"福利高能-18"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car019.mp3",title:"福利高能-19"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car020.mp3",title:"福利高能-20"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car021.mp3",title:"福利高能-21"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car022.mp3",title:"福利高能-22"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car023.mp3",title:"福利高能-23"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car024.mp3",title:"福利高能-24"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car025.mp3",title:"福利高能-25"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car026.mp3",title:"福利高能-26"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car027.mp3",title:"福利高能-27"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car028.mp3",title:"福利高能-28"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car029.mp3",title:"福利高能-29"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car030.mp3",title:"福利高能-30"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car031.mp3",title:"福利高能-31"},
+			{src:"https://cdn.jsdelivr.net/gh/imoshanghua/file/FFOutput/car032.mp3",title:"福利高能-32"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/shaonv.mp3",title:"少女娇喘"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli1.m4a",title:"极致撩拨享受"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli2.mp3",title:"福利舔耳特辑"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli4.mp3",title:"上原亞衣小姐姐"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli5.mp3",title:"色气舔耳舌功"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli6.m4a",title:"性感表演口腔音"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli7.mp3",title:"早安老公我不要"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli8.m4a",title:"角色扮演女仆"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli9.m4a",title:"朵朵床上飞机"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulix.mp3",title:"斗鱼第一舌舔耳"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulia.mp3",title:"治愈的姐姐舔耳"},	
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulib.mp3",title:"远古骚麦神曲"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulic.mp3",title:"雅萌骚麦禁歌"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulid.mp3",title:"深夜福li带耳机"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulie.mp3",title:"色气满满系列"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulif.mp3",title:"女友舔耳日常"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulig.mp3",title:"陪睡耳骚舔耳"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulih.mp3",title:"令人酥麻的吹气"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulij.mp3",title:"姐姐全套舔耳"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulik.mp3",title:"呼吸娇喘小蜜"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fulil.mp3",title:"博狗烧麦禁歌"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao1.mp3",title:"不能错过的声音"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao2.mp3",title:"床上等你睡觉"},	
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao3.mp3",title:"羞羞神神秘秘"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao4.mp3",title:"撩到你腿软"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao5.mp3",title:"芦荟胶揉耳朵"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao6.mp3",title:"女优声控点这里"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao7.mp3",title:"前奏喘息掏耳朵"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao8.mp3",title:"入眠良用舔耳音"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao9.mp3",title:"声优柳其儿舔耳"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao10.mp3",title:"水声啪啪啪高能"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao11.mp3",title:"听说你失眠了"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao12.mp3",title:"小姐姐清理耳道"},			
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao13.mp3",title:"音质高版双舔耳"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmsla.mp3",title:"表妹电脑有什么 "},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslb.mp3",title:"病娇姐姐的拘禁play"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslc.mp3",title:"催眠书写声"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmsld.mp3",title:"读睡前故事"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmsle.mp3",title:"很神秘的护士姐姐"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslf.mp3",title:"男友和女友的甜蜜日常"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslg.mp3",title:"陪老公睡觉"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao14.mp3",title:"陪睡系列第一期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao15.mp3",title:"陪睡系列第二期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao16.mp3",title:"陪睡系列第三期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao17.mp3",title:"陪睡系列第四期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao18.mp3",title:"陪睡系列第五期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao19.mp3",title:"陪睡系列第六期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/ersao12.mp3",title:"陪睡系列第七期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslh.mp3",title:"陪睡系列第八期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslj.mp3",title:"陪睡系列第九期"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslk.mp3",title:"陪睡系列完结篇"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmsll.mp3",title:"Dana晚安吻"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslm.mp3",title:"吃西瓜+口腔音"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmsln.mp3",title:"Miniyu触摸耳朵"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslo.mp3",title:"Rui闲聊+耳骚"},	
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslp.mp3",title:"乳胶手套让你放松"},			
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslq.mp3",title:"吃耳朵的小妹妹"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslr.mp3",title:"姐姐最棒的舔耳套餐"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmsls.mp3",title:"手势催眠"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslt.mp3",title:"模拟人头抚摸音"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/nmslu.mp3",title:"舔食棒棒糖"},
+			{src:"http://xiaoqige.file.alimmdn.com/fuli/fuli13.m4a",title:"請戴耳機觀賞"}
+		);	
+		var index = -1;	
+		var playState = 1;
+		function createBox(){
+			var html="";
+			for(var i=0;i<myMusics.length;i++){
+				html+="<li>"+(i+1)+"  <a href='javascript:clickName("+i+");'>"+myMusics[i].title+"</a></li>"
+			}
+			return html
+		}
+		//页面加载		
+		$(document).ready(function(){
+			$("#"+"box").append(createBox());
+			playMusic(1);
+			
+			//按钮"下一首"单击事件
+			$("#nextMusic").click(function(){
+				playMusic(1,1);
+			});
+			//按钮"上一首"单击事件
+			$("#lastMusic").click(function(){
+				playMusic(2);
+			});
+			////按钮"播放/暂停"单击事件
+			$("#playMusic").click(function(){
+				if($(this).val()=="播放"){
+					$(this).val("暂停");
+					document.getElementById("media").play();
+				}else if($(this).val()=="暂停"){
+					$(this).val("播放");
+					document.getElementById("media").pause();
+				}
+			});
+			
+			//快进
+			$("#fast").click(function(){
+				var media = document.getElementById("media");
+				media.currentTime+=5;
+			});
+			//快退
+			$("#rewind").click(function(){
+				var media = document.getElementById("media");
+				media.currentTime-=5;
+			});
+			//播放状态
+			$("#playState").change(function(){
+				playState = $(this).val();				
+			});
+			
+			$("li").mouseover(function(){
+				$(this).css("background-color","#F0F0F0");
+			});
+			
+			$("li").mouseout(function(){
+				$(this).css("background-color","#FFFFFF");
+				$($("li")[index]).css("background-color","#F0F0F0");
+			});
+			
+			
+		});
+		
+		//点击名字播放音乐
+		function clickName(i){
+			index=i;
+			playMusic(0);
+		}
+		
+		//音乐播放
+		function playMusic(s,n){
+			$("#playMusic").val("暂停");
+			if(s==0){//点击名字播放音乐
+			
+			}else if(s==1){//下一首
+				$("#playMusic").val("暂停");
+				if(playState==0){//单曲循环
+					if(n==0){
+					
+					}else if(n==1){
+						index++;
+						if(index>=myMusics.length){
+							index=0;
+						}
+					}
+				}else if(playState==1){//列表循环
+					index++;
+					if(index>=myMusics.length){
+						index=0;
+					}
+				}else if(playState==2){//随机播放
+					index = Math.floor(Math.random()*myMusics.length);
+				}
+			}else if(s==2){//上一首
+				index--;
+				if(index<0){
+					index=myMusics.length-1;
+				}
+			}
+			
+			
+			//修改audio资源路径
+			$("#media").attr("src",myMusics[index].src);
+			//音乐播放
+			$("#media").play;
+			//显示音乐名称
+			$("#musicTitle").text(myMusics[index].title);
+			$("title").text(myMusics[index].title);
+			//重置li列表背景色
+			$("#box").children("li").css("background-color","#FFFFFF");
+			$("#box").children("li").css("font-weight","normal");
+			
+			//修改播放音乐背景色
+			$($("#box").children("li")[index]).css("background-color","#F0F0F0");
+			$($("#box").children("li")[index]).css("font-weight","bold");
+			
+			$("#sliding").offset({left:60});
+		}
+		//时间获取
+		function timeupdate(){
+			//获取audio元素
+			var media = document.getElementById("media");
+			//音乐当前位置
+			var curr = Math.floor(media.currentTime);
+			//音乐长度
+			var dur = Math.floor(media.duration);
+			$("#totalTime").text("时长："+formatTime(dur));
+			$("#currTime").text("当前："+formatTime(curr));
+		}
+		//音乐计时格式
+		function formatTime(time){
+			
+			var h=0,i=0,s=parseInt(time);
+			if(s>60){
+				i=parseInt(s/60);
+				s=parseInt(s%60);
+				if(i > 60) {
+					h=parseInt(i/60);
+					i = parseInt(i%60);
+				}
+			}
+			var zero=function(v){
+				return (v>>0)<10?"0"+v:v;
+			};
+			return (zero(h)+":"+zero(i)+":"+zero(s));
+		};
+	</script>
+	</head>
+	
+	<body>	
+		<audio id="media" src="" autoplay="autoplay" onended="playMusic(1,0)" ontimeupdate="timeupdate()" ></audio>
+		
+		<div style="float:left;margin-left:50px;width:450px;height:200px;">
+				<p id="musicTitle"></p>
+				<p id="currTime" >当前：00:00:00</p>
+				<p id="totalTime" >时长：00:00:00</p>
+				
+				<input id="lastMusic" type="button" value="上一首" />
+				<input id="rewind" type="button" value="<<" />
+				<input id="playMusic" type="button" value="暂停" />
+				<input id="fast" type="button" value=">>" />
+				<input id="nextMusic" type="button" value="下一首" />
+				<select id="playState">
+					<option value="0">单曲循环</option>
+					<option value="1" selected>列表循环</option>
+					<option value="2">随机播放</option>
+				</select>
+				<ul id="box" style="border:1px solid black;padding:0px;height:300px;width:300px;overflow-y:auto;"></ul>
+		</div>
+		<div style="text-align:center;">
+<p><a href="http://00houqq.cn/" target="_blank">一个奇鸽船新体验</a></p>
+</div>
+
+	</body>
+</html>
